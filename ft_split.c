@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+	DESCRIPTION :
+	The function ft_split allocates and copies an array of strings by 
+	splitting the given string s using the given separator c.
+
+	RETURN VALUE :
+	An array of strings resulting from the split. NULL if the memory
+	allocation fails.
+*/
+
 static	int	count_words(const char *str, char c)
 {
 	size_t	i;
@@ -34,7 +44,10 @@ static	char	**__clean(char **tmp)
 
 	i = 0;
 	while (tmp[i])
-		free(tmp[i++]);
+	{
+		free(tmp[i]);
+		tmp[i++] = 0;
+	}
 	free(tmp);
 	return (NULL);
 }
