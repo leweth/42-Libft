@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/*
+	DESCRIPTION :
+	The function ft_substr extracts a substring from the given string by
+	allocating sufficient memory for the new string starting at index start
+	and ending at len characters.
+
+	RETURN VALUE :
+	A pointer to the new string.
+	NULL if the memory allocation fails.
+*/
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*tmp;
