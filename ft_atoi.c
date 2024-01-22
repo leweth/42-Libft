@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+
+/*
+	DESCRIPTION :
+	The function ft_atoi converts a string into an int.
+
+	RETURN VALUE :
+	The converted int.
+*/
+
 static	int	__isspace(int c)
 {
 	if ((c >= 9 && c <= 13) || c == 32)
