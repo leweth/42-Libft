@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*
+	DESCRIPTION :
+	The function ft_strchr finds the first occurence of character c in
+	string str.
+
+	RETURN VALUE :
+	A pointer to the first occurence of c in str.
+	NULL if c is not found.
+*/
+
 char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
