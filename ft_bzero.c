@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+
+/*
+	DESCRIPTION :
+	The function ft_bzero erases data in the n bytes of memory starting
+	at location s by writing '\0's.
+
+	RETURN VALUE :
+	None.
+*/
+
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, 0, n);
